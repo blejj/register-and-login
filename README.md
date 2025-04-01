@@ -1,0 +1,57 @@
+Proyecto de Peluquería - Java Swing + MySQL
+
+Descripción:
+Este es un proyecto de escritorio desarrollado en Java con Maven y Swing, que permite la gestión de clientes y turnos en una peluquería. El sistema incluye autenticación de usuario, registro y la posibilidad de administrar citas.
+
+Tecnologías utilizadas:
+- Java (JDK 8 o superior)
+- Maven (gestor de dependencias)
+- Swing (interfaz gráfica)
+- MySQL (base de datos)
+- JDBC (conexión con la base de datos)
+
+Funcionalidades implementadas:
+✅ Conexión con MySQL: Clase ConexionBD.java para manejar la conexión.
+✅ Pantalla de Registro: Formulario para que el administrador pueda registrarse en el sistema.
+✅ Inserción de usuario en la base de datos: Se guarda el email y la contraseña en MySQL.
+✅ Redirección a otra ventana: Luego del registro, se cierra la ventana y se abre otra.
+✅ Inicio de sesión: Validar usuario y redirigirlo al sistema.
+
+Funcionalidades en desarrollo:
+🛠 Gestión de turnos: Permitir al administrador agendar citas para clientes.
+🛠 Gestión de inventario.
+🛠 Interfaz mejorada: Optimizar diseño de ventanas con Swing.
+
+Configuración de la Base de Datos:
+Crear una base de datos en MySQL:
+CREATE DATABASE peluqueria;
+
+Crear la tabla usuario:
+CREATE TABLE usuario (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE clientes(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(45) NOT NULL,
+    apellido VARCHAR(45) NOT NULL,
+    telefono VARCHAR(45) NOT NULL,
+    email VARCHAR(45) NOT NULL,
+)
+
+Instalación y Ejecución:
+
+Clonar el repositorio o descargar el código.
+Importar el proyecto en NetBeans o cualquier IDE compatible con Maven.
+Verificar que el driver de MySQL esté en las dependencias pom.xml:
+
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version>
+</dependency>
+Ejecutar el main en Peluqueriamama.java.
+
+Probar la conexión en ConexionBD.java.
