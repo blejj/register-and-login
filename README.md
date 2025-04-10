@@ -7,8 +7,6 @@ Este es un proyecto de escritorio desarrollado en Java con Maven y Swing, que pe
 ![2](https://github.com/user-attachments/assets/103eac11-48c4-4a8b-a961-3f1c8f1a7d06)
 ![3](https://github.com/user-attachments/assets/e73fc1c9-50b4-49be-9ace-2bbe8e6d26b2)
 
-
-
 Tecnologías utilizadas:
 - Java (JDK 8 o superior)
 - Maven (gestor de dependencias)
