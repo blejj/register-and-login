@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/81f855e1-3845-4dfa-9ce2-5134ded242d9)Proyecto de Peluquería - Java Swing + MySQL
+Proyecto de Peluquería - Java Swing + MySQL
 
 Descripción:
 Este es un proyecto de escritorio desarrollado en Java con Maven y Swing, que permite la gestión de clientes y turnos en una peluquería. El sistema incluye autenticación de usuario, registro y la posibilidad de administrar citas.
